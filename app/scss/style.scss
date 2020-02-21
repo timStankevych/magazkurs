@@ -5,6 +5,9 @@
 @import "media";
 
 // start header
+.header{
+  background-color: #fff;
+}
 
 .header__top-inner {
   display: flex;
@@ -102,6 +105,7 @@ background-color: $yellow;
   }
 }
 .basket{
+  margin-right: 20px;
   span{
   background-color: $green;  
   }
@@ -116,7 +120,6 @@ background-color: $yellow;
   }
 }
 .user{
-  margin-left: 20px;
   margin-right: 25px;
   padding-right: 20px;
   position: relative;
@@ -174,6 +177,7 @@ background-color: $yellow;
   position: absolute;
   top: 69px;
   transition: all .3s;
+  z-index: 1;
 }
 .user__box, 
 .basket__box,
@@ -304,6 +308,10 @@ background-color: $red;
 }
 .icons-color::before{
   color: $tomato;
+}
+.header__btn-menu,
+.menu__btn{
+  display: none;
 }
 // end header
 // start search
@@ -1153,3 +1161,6 @@ button.icon-unsorted{
 }
 
 //end product-page
+
+
+@import 'media';
